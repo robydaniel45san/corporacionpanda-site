@@ -31,7 +31,7 @@ export default function Contact() {
       setSent(true)
       reset()
     } catch (e) {
-      setError('Hubo un error al enviar. Escríbenos directo a contacto@corporacionpanda.site')
+      setError('Hubo un error al enviar. Escríbenos directo a robyduran1997@gmail.com')
     } finally {
       setLoading(false)
     }
@@ -54,7 +54,7 @@ export default function Contact() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', marginBottom: '2rem' }}>
               {[
                 { icon: <MapPin size={20} />, title: 'Ubicación', text: 'Valle Sánchez, Urb. Colinas del Norte 2\nSanta Cruz de la Sierra, Bolivia' },
-                { icon: <Mail size={20} />, title: 'Email', text: 'contacto@corporacionpanda.site' },
+                { icon: <Mail size={20} />, title: 'Email', text: 'robyduran1997@gmail.com' },
                 { icon: <MessageSquare size={20} />, title: 'WhatsApp', text: '+591 — Disponible próximamente' },
               ].map(c => (
                 <div key={c.title} style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>

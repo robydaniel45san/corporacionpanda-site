@@ -96,7 +96,7 @@ export default function Footer() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               {[
                 { icon: <MapPin size={15} />, text: 'Valle Sánchez, Urb. Colinas del Norte 2\nSanta Cruz, Bolivia' },
-                { icon: <Mail size={15} />, text: 'contacto@corporacionpanda.site' },
+                { icon: <Mail size={15} />, text: 'robyduran1997@gmail.com' },
                 { icon: <Phone size={15} />, text: '+591 — WhatsApp disponible' },
               ].map((c, i) => (
                 <div key={i} style={{ display: 'flex', gap: '0.6rem', alignItems: 'flex-start' }}>
