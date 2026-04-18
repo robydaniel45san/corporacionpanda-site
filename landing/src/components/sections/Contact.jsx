@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { Send, CheckCircle, MapPin, Mail, MessageSquare } from 'lucide-react'
-import { supabase } from '@/lib/supabase'
 
 const SERVICES_LIST = [
   'Landing Page', 'CRM Personalizado', 'Ecommerce', 'Bot WhatsApp',
@@ -19,15 +18,13 @@ export default function Contact() {
     setLoading(true)
     setError(null)
     try {
-      const { error: sbErr } = await supabase.from('leads').insert([{
-        name: data.name,
-        email: data.email,
-        phone: data.phone,
-        company: data.company,
-        service: data.service,
-        message: data.message,
-      }])
-      if (sbErr) throw sbErr
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      })
+      const json = await res.json()
+      if (!res.ok || !json.ok) throw new Error(json.error || 'error')
       setSent(true)
       reset()
     } catch (e) {
