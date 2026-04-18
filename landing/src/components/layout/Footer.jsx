@@ -97,7 +97,7 @@ export default function Footer() {
               {[
                 { icon: <MapPin size={15} />, text: 'Valle Sánchez, Urb. Colinas del Norte 2\nSanta Cruz, Bolivia' },
                 { icon: <Mail size={15} />, text: 'robyduran1997@gmail.com' },
-                { icon: <Phone size={15} />, text: '+591 — WhatsApp disponible' },
+                { icon: <Phone size={15} />, text: '+591 64531024' },
               ].map((c, i) => (
                 <div key={i} style={{ display: 'flex', gap: '0.6rem', alignItems: 'flex-start' }}>
                   <span style={{ color: '#00C896', marginTop: '2px', flexShrink: 0 }}>{c.icon}</span>

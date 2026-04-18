@@ -52,7 +52,7 @@ export default function Contact() {
               {[
                 { icon: <MapPin size={20} />, title: 'Ubicación', text: 'Valle Sánchez, Urb. Colinas del Norte 2\nSanta Cruz de la Sierra, Bolivia' },
                 { icon: <Mail size={20} />, title: 'Email', text: 'robyduran1997@gmail.com' },
-                { icon: <MessageSquare size={20} />, title: 'WhatsApp', text: '+591 — Disponible próximamente' },
+                { icon: <MessageSquare size={20} />, title: 'WhatsApp', text: '+591 64531024' },
               ].map(c => (
                 <div key={c.title} style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
                   <div style={{
