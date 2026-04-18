@@ -2,7 +2,7 @@ import { createClient } from '@supabase/supabase-js'
 import { Resend } from 'resend'
 
 const OWNER_EMAIL = 'robyduran1997@gmail.com'
-const FROM_EMAIL = 'Corporación Panda <onboarding@resend.dev>'
+const FROM_EMAIL = 'Corporación Panda <contacto@corporacionpanda.site>'
 const BRAND = 'Corporación Panda'
 
 export default async function handler(req, res) {
