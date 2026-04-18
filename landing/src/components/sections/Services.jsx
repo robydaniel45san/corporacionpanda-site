@@ -61,7 +61,7 @@ const SERVICES = [
 
 export default function Services() {
   return (
-    <section id="servicios" className="section-pad" style={{ background: '#0A0A0A' }}>
+    <section id="servicios" className="section-pad" style={{ background: '#252525' }}>
       <div className="wrap">
         {/* Header */}
         <div style={{ marginBottom: '3rem' }}>
@@ -80,8 +80,8 @@ export default function Services() {
                 <span style={{
                   position: 'absolute', top: '1rem', right: '1rem',
                   fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.06em',
-                  background: 'rgba(0,200,150,0.12)', color: '#00C896',
-                  border: '1px solid rgba(0,200,150,0.25)',
+                  background: 'rgba(255,255,255,0.12)', color: '#FFFFFF',
+                  border: '1px solid rgba(255,255,255,0.25)',
                   borderRadius: '999px', padding: '0.2rem 0.6rem',
                 }}>
                   {s.tag}
@@ -89,9 +89,9 @@ export default function Services() {
               )}
               <div style={{
                 width: '3rem', height: '3rem', borderRadius: '12px',
-                background: 'rgba(0,200,150,0.1)', border: '1px solid rgba(0,200,150,0.2)',
+                background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.2)',
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
-                color: '#00C896', marginBottom: '1rem',
+                color: '#FFFFFF', marginBottom: '1rem',
               }}>
                 {s.icon}
               </div>
@@ -103,9 +103,9 @@ export default function Services() {
               </p>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                 <span style={{ fontSize: '0.8rem', color: '#A0AEC0' }}>
-                  Desde <span style={{ color: '#00C896', fontWeight: 700 }}>{s.from}</span>
+                  Desde <span style={{ color: '#FFFFFF', fontWeight: 700 }}>{s.from}</span>
                 </span>
-                <a href="#contacto" style={{ color: '#00C896', fontSize: '0.8rem', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
+                <a href="#contacto" style={{ color: '#FFFFFF', fontSize: '0.8rem', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
                   Cotizar <ArrowRight size={14} />
                 </a>
               </div>

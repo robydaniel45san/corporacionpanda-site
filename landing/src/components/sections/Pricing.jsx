@@ -61,7 +61,7 @@ const MAINTENANCE = [
 
 export default function Pricing() {
   return (
-    <section id="precios" className="section-pad" style={{ background: '#080808' }}>
+    <section id="precios" className="section-pad" style={{ background: '#1E1E1E' }}>
       <div className="wrap">
         <div style={{ marginBottom: '3rem' }}>
           <span className="section-label">Inversión</span>
@@ -76,14 +76,14 @@ export default function Pricing() {
           {PLANS.map(plan => (
             <div key={plan.name} className="card" style={{
               position: 'relative',
-              border: plan.highlight ? '1px solid rgba(0,200,150,0.5)' : undefined,
-              boxShadow: plan.highlight ? '0 0 32px rgba(0,200,150,0.15)' : undefined,
+              border: plan.highlight ? '1px solid rgba(255,255,255,0.5)' : undefined,
+              boxShadow: plan.highlight ? '0 0 32px rgba(255,255,255,0.15)' : undefined,
             }}>
               {plan.highlight && (
                 <div style={{
                   position: 'absolute', top: '-1px', left: '50%', transform: 'translateX(-50%)',
-                  background: 'linear-gradient(135deg, #00C896, #00a8ff)',
-                  color: '#0A0A0A', fontSize: '0.7rem', fontWeight: 800,
+                  background: '#FFFFFF',
+                  color: '#000', fontSize: '0.7rem', fontWeight: 800,
                   padding: '0.2rem 1rem', borderRadius: '0 0 8px 8px',
                   letterSpacing: '0.08em', textTransform: 'uppercase',
                 }}>
@@ -96,7 +96,7 @@ export default function Pricing() {
                 </h3>
                 <p style={{ color: '#A0AEC0', fontSize: '0.85rem', marginBottom: '1rem' }}>{plan.desc}</p>
                 <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.4rem' }}>
-                  <span className="gradient-text" style={{ fontSize: '2rem', fontFamily: 'Space Grotesk', fontWeight: 700 }}>
+                  <span style={{ fontSize: '2rem', fontFamily: 'Space Grotesk', fontWeight: 700, color: '#FFF' }}>
                     {plan.price}
                   </span>
                   <span style={{ color: '#A0AEC0', fontSize: '0.8rem' }}>USD · {plan.period}</span>
@@ -106,7 +106,7 @@ export default function Pricing() {
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.6rem', marginBottom: '1.5rem' }}>
                 {plan.features.map(f => (
                   <li key={f} style={{ display: 'flex', gap: '0.5rem', alignItems: 'flex-start' }}>
-                    <Check size={15} color="#00C896" style={{ marginTop: '2px', flexShrink: 0 }} />
+                    <Check size={15} color="#FFFFFF" style={{ marginTop: '2px', flexShrink: 0 }} />
                     <span style={{ color: '#A0AEC0', fontSize: '0.85rem' }}>{f}</span>
                   </li>
                 ))}
@@ -131,7 +131,7 @@ export default function Pricing() {
                 <div style={{ fontFamily: 'Space Grotesk', fontWeight: 700, fontSize: '0.95rem', marginBottom: '0.4rem' }}>
                   {m.plan}
                 </div>
-                <div className="gradient-text" style={{ fontSize: '1.5rem', fontFamily: 'Space Grotesk', fontWeight: 700, marginBottom: '0.4rem' }}>
+                <div style={{ fontSize: '1.5rem', fontFamily: 'Space Grotesk', fontWeight: 700, marginBottom: '0.4rem', color: '#FFF' }}>
                   {m.price}
                 </div>
                 <p style={{ color: '#A0AEC0', fontSize: '0.8rem' }}>{m.desc}</p>
@@ -143,11 +143,11 @@ export default function Pricing() {
         {/* Política cambios */}
         <div style={{
           marginTop: '2rem', padding: '1.5rem', borderRadius: '16px',
-          background: 'rgba(0,200,150,0.05)', border: '1px solid rgba(0,200,150,0.15)',
+          background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.15)',
           textAlign: 'center',
         }}>
           <p style={{ color: '#A0AEC0', fontSize: '0.875rem' }}>
-            <span style={{ color: '#00C896', fontWeight: 700 }}>Política de cambios post-entrega:</span>{' '}
+            <span style={{ color: '#FFFFFF', fontWeight: 700 }}>Política de cambios post-entrega:</span>{' '}
             Cambio Bajo $30–$80 · Medio $80–$250 · Alto $250–$800 · Crítico a cotizar.
             Cada cambio incluye contrato específico.
           </p>

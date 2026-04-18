@@ -34,8 +34,8 @@ export default function Header() {
         {/* Logo */}
         <a href="#inicio" style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
           <img src="/logo.png" alt="Corporación Panda" style={{ height: '2.2rem', width: 'auto' }} />
-          <span style={{ fontFamily: 'Space Grotesk, sans-serif', fontWeight: 700, fontSize: '1.1rem', letterSpacing: '-0.02em' }}>
-            Corporación <span className="gradient-text">Panda</span>
+          <span style={{ fontFamily: 'Space Grotesk, sans-serif', fontWeight: 700, fontSize: '1.05rem', letterSpacing: '-0.02em', color: '#FFF' }}>
+            Corporación <span style={{ color: '#888', fontWeight: 400, fontStyle: 'italic' }}>Panda</span>
           </span>
         </a>
 
@@ -48,7 +48,7 @@ export default function Header() {
                 fontSize: '0.9rem', fontWeight: 500, color: '#A0AEC0',
                 transition: 'color 0.2s',
               }}
-              onMouseEnter={e => e.target.style.color = '#00C896'}
+              onMouseEnter={e => e.target.style.color = '#FFFFFF'}
               onMouseLeave={e => e.target.style.color = '#A0AEC0'}
             >
               {item.label}

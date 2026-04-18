@@ -38,7 +38,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contacto" className="section-pad" style={{ background: '#0A0A0A' }}>
+    <section id="contacto" className="section-pad" style={{ background: '#252525' }}>
       <div className="wrap">
         <div style={{ marginBottom: '3rem' }}>
           <span className="section-label">Hablemos</span>
@@ -60,9 +60,9 @@ export default function Contact() {
                 <div key={c.title} style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
                   <div style={{
                     width: '2.5rem', height: '2.5rem', borderRadius: '10px',
-                    background: 'rgba(0,200,150,0.1)', border: '1px solid rgba(0,200,150,0.2)',
+                    background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.2)',
                     display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    color: '#00C896', flexShrink: 0,
+                    color: '#FFFFFF', flexShrink: 0,
                   }}>
                     {c.icon}
                   </div>
@@ -86,7 +86,7 @@ export default function Contact() {
               <p style={{ color: '#A0AEC0', fontSize: '0.8rem', lineHeight: 1.6 }}>
                 Lunes a Viernes: 8:00 – 18:00<br />
                 Sábados: 9:00 – 13:00<br />
-                <span style={{ color: '#00C896' }}>Respuesta inicial en menos de 24hs</span>
+                <span style={{ color: '#FFFFFF' }}>Respuesta inicial en menos de 24hs</span>
               </p>
             </div>
           </div>
@@ -95,7 +95,7 @@ export default function Contact() {
           <div>
             {sent ? (
               <div className="card" style={{ textAlign: 'center', padding: '3rem 2rem' }}>
-                <CheckCircle size={48} color="#00C896" style={{ margin: '0 auto 1rem' }} />
+                <CheckCircle size={48} color="#FFFFFF" style={{ margin: '0 auto 1rem' }} />
                 <h3 style={{ fontFamily: 'Space Grotesk', fontWeight: 700, fontSize: '1.3rem', marginBottom: '0.75rem' }}>
                   ¡Mensaje recibido!
                 </h3>

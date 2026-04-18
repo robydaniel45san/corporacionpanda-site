@@ -47,7 +47,7 @@ const STEPS = [
 
 export default function Process() {
   return (
-    <section id="proceso" className="section-pad" style={{ background: '#080808' }}>
+    <section id="proceso" className="section-pad" style={{ background: '#1E1E1E' }}>
       <div className="wrap">
         <div style={{ marginBottom: '3rem' }}>
           <span className="section-label">Metodología</span>
@@ -63,15 +63,15 @@ export default function Process() {
               <div style={{ flexShrink: 0 }}>
                 <div style={{
                   width: '3rem', height: '3rem', borderRadius: '12px',
-                  background: 'rgba(0,200,150,0.1)', border: '1px solid rgba(0,200,150,0.2)',
-                  display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#00C896',
+                  background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.2)',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#FFFFFF',
                 }}>
                   {step.icon}
                 </div>
               </div>
               <div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.4rem' }}>
-                  <span style={{ fontSize: '0.7rem', fontWeight: 700, color: '#00C896', fontFamily: 'JetBrains Mono, monospace' }}>
+                  <span style={{ fontSize: '0.7rem', fontWeight: 700, color: '#FFFFFF', fontFamily: 'JetBrains Mono, monospace' }}>
                     {step.n}
                   </span>
                   <h3 style={{ fontFamily: 'Space Grotesk', fontWeight: 700, fontSize: '1rem' }}>{step.title}</h3>
@@ -80,8 +80,8 @@ export default function Process() {
                   {step.desc}
                 </p>
                 <span style={{
-                  fontSize: '0.72rem', fontWeight: 600, color: '#00C896',
-                  background: 'rgba(0,200,150,0.08)', borderRadius: '6px',
+                  fontSize: '0.72rem', fontWeight: 600, color: '#FFFFFF',
+                  background: 'rgba(255,255,255,0.08)', borderRadius: '6px',
                   padding: '0.2rem 0.5rem',
                 }}>
                   {step.detail}

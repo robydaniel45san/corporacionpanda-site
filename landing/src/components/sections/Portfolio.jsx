@@ -27,7 +27,7 @@ export default function Portfolio() {
   }, [])
 
   return (
-    <section id="portafolio" className="section-pad" style={{ background: '#0A0A0A' }}>
+    <section id="portafolio" className="section-pad" style={{ background: '#252525' }}>
       <div className="wrap">
         <div style={{ marginBottom: '3rem' }}>
           <span className="section-label">Portafolio</span>
@@ -42,9 +42,9 @@ export default function Portfolio() {
               {/* Placeholder cover */}
               <div style={{
                 height: '140px', borderRadius: '10px', marginBottom: '1rem',
-                background: 'linear-gradient(135deg, rgba(0,200,150,0.12) 0%, rgba(0,168,255,0.08) 100%)',
+                background: 'linear-gradient(135deg, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0.08) 100%)',
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
-                border: '1px solid rgba(0,200,150,0.12)',
+                border: '1px solid rgba(255,255,255,0.12)',
               }}>
                 <span style={{ fontSize: '0.75rem', color: '#A0AEC0', fontFamily: 'JetBrains Mono, monospace' }}>
                   [ preview ]
@@ -52,8 +52,8 @@ export default function Portfolio() {
               </div>
               <span style={{
                 fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.06em',
-                background: 'rgba(0,200,150,0.1)', color: '#00C896',
-                border: '1px solid rgba(0,200,150,0.2)',
+                background: 'rgba(255,255,255,0.1)', color: '#FFFFFF',
+                border: '1px solid rgba(255,255,255,0.2)',
                 borderRadius: '999px', padding: '0.15rem 0.55rem',
                 marginBottom: '0.6rem', display: 'inline-block',
               }}>
@@ -90,7 +90,7 @@ export default function Portfolio() {
                 background: '#111', fontSize: '0.85rem', color: '#A0AEC0',
                 transition: 'border-color 0.2s',
               }}
-                onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(0,200,150,0.3)'}
+                onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(255,255,255,0.3)'}
                 onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)'}
               >
                 {c.logo_url
